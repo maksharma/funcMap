@@ -29,11 +29,11 @@ func main() {
 	} else {
 		fmt.Println("Err returned by fooErr:", errVal)
 	}
-	
+
 	//Call "bar" with err in func call
-res, err = CallFn(m, "bar")
+	res, err = CallFn(m, "bar")
 	fmt.Println("res,err calling 'bar' with intentional err:", res, err)
-	
+
 	fmt.Println("Done!")
 }
 func foo() error {
